@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E57A31D6-CAAC-459B-B032-CB43B7387481}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sinema_Uygulaması</RootNamespace>
+    <AssemblyName>Sinema Uygulaması</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="biletalma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biletalma.Designer.cs">
+      <DependentUpon>biletalma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="büfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="büfe.Designer.cs">
+      <DependentUpon>büfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bütün filmler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bütün filmler.Designer.cs">
+      <DependentUpon>bütün filmler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BÜTÜN FİLMLER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BÜTÜN FİLMLER.Designer.cs">
+      <DependentUpon>BÜTÜN FİLMLER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM2.Designer.cs">
+      <DependentUpon>FORM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaneyönetimDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hastaneyönetimDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="koltuk seçimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koltuk seçimi.Designer.cs">
+      <DependentUpon>koltuk seçimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salon.Designer.cs">
+      <DependentUpon>salon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="site.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="site.Designer.cs">
+      <DependentUpon>site.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbglntı.cs" />
+    <Compile Include="SİNEMA ANA GİRİŞ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SİNEMA ANA GİRİŞ.Designer.cs">
+      <DependentUpon>SİNEMA ANA GİRİŞ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VİZYONDA OLANLAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VİZYONDA OLANLAR.Designer.cs">
+      <DependentUpon>VİZYONDA OLANLAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üye bilgi güncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üye bilgi güncelleme.Designer.cs">
+      <DependentUpon>üye bilgi güncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üye Büfe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üye Büfe.Designer.cs">
+      <DependentUpon>üye Büfe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜYE GİRİŞİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜYE GİRİŞİ.Designer.cs">
+      <DependentUpon>ÜYE GİRİŞİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜYE KAYIT PANELİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜYE KAYIT PANELİ.Designer.cs">
+      <DependentUpon>ÜYE KAYIT PANELİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üye paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üye paneli.Designer.cs">
+      <DependentUpon>üye paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜYE PANELİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜYE PANELİ.Designer.cs">
+      <DependentUpon>ÜYE PANELİ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üyeBİLETALMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üyeBİLETALMA.Designer.cs">
+      <DependentUpon>üyeBİLETALMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üyeKoltuk seçimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üyeKoltuk seçimi.Designer.cs">
+      <DependentUpon>üyeKoltuk seçimi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="biletalma.resx">
+      <DependentUpon>biletalma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="büfe.resx">
+      <DependentUpon>büfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bütün filmler.resx">
+      <DependentUpon>bütün filmler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BÜTÜN FİLMLER.resx">
+      <DependentUpon>BÜTÜN FİLMLER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM2.resx">
+      <DependentUpon>FORM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="koltuk seçimi.resx">
+      <DependentUpon>koltuk seçimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="salon.resx">
+      <DependentUpon>salon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="site.resx">
+      <DependentUpon>site.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SİNEMA ANA GİRİŞ.resx">
+      <DependentUpon>SİNEMA ANA GİRİŞ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VİZYONDA OLANLAR.resx">
+      <DependentUpon>VİZYONDA OLANLAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üye bilgi güncelleme.resx">
+      <DependentUpon>üye bilgi güncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üye Büfe.resx">
+      <DependentUpon>üye Büfe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜYE GİRİŞİ.resx">
+      <DependentUpon>ÜYE GİRİŞİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜYE KAYIT PANELİ.resx">
+      <DependentUpon>ÜYE KAYIT PANELİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üye paneli.resx">
+      <DependentUpon>üye paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜYE PANELİ.resx">
+      <DependentUpon>ÜYE PANELİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üyeBİLETALMA.resx">
+      <DependentUpon>üyeBİLETALMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üyeKoltuk seçimi.resx">
+      <DependentUpon>üyeKoltuk seçimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hastaneyönetimDataSet.xsc">
+      <DependentUpon>hastaneyönetimDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hastaneyönetimDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hastaneyönetimDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hastaneyönetimDataSet.xss">
+      <DependentUpon>hastaneyönetimDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

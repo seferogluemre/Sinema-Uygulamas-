@@ -1,0 +1,206 @@
+﻿using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Windows.Forms;
+namespace Sinema_Uygulaması
+{
+    public partial class koltuk_seçimi : Form
+    {
+        private Random random = new Random();
+       
+        public koltuk_seçimi()
+        {
+            InitializeComponent();
+        }
+        sqlbglntı bgl = new sqlbglntı();
+        private void koltuk_seçimi_Load(object sender, EventArgs e)
+        {
+        
+
+
+            RastgeleLabelDoldur(4);
+            comboBox1.Items.Add("SALON 1");
+        }
+        private void RastgeleLabelDoldur(int doluLabelSayisi)
+        {
+
+            Label[] labels = {labelA1  ,label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24 };
+
+
+            labels = labels.OrderBy(x => random.Next()).ToArray();
+
+
+            for (int i = 0; i < doluLabelSayisi; i++)
+            {
+                labels[i].Text = "DOLU";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label2.Text);
+            labelA1.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label3.Text);
+            label14.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label4.Text);
+            label15.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label5.Text);
+            label16.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label9.Text);
+            label19.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label8.Text);
+            label18.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label7.Text);
+            label17.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label6.Text);
+            label20.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label13.Text);
+            label24.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label12.Text);
+            label21.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label11.Text);
+            label22.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update müşteri2 set müşteriKOLTUK=@p1 ", bgl.sqlbaglantı());
+            komut2.Parameters.AddWithValue("@p1", label10.Text);
+            label23.Text = "DOLU";
+            komut2.ExecuteNonQuery();
+            bgl.sqlbaglantı().Close();
+            MessageBox.Show("Rezerv oluşturuldu");
+        }
+
+        private void bÜFEMİZToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            büfe bf = new büfe();
+            bf.Show();
+
+        }
+
+        private void hIZLIERİŞİMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bÜTÜNFİLMLERToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bütün_filmler btfl = new bütün_filmler();
+            btfl.Show();
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string seçilen = comboBox1.SelectedItem.ToString();
+
+            DialogResult tepki = new DialogResult();
+            tepki = MessageBox.Show("Salona geç", "FİLM BAŞLADI", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            if (tepki == DialogResult.OK)
+            {
+                salon salon1 = new salon();
+                salon1.Show();
+                this.Hide();
+            }
+
+        }
+
+        private void aNAMENÜToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FORM2 fr2 = new FORM2();
+            fr2.Show();
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
